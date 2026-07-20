@@ -47,10 +47,10 @@ export default function About() {
               <p>
                 Hi — I&apos;m{" "}
                 <strong className="font-semibold text-ink-900">
-                  Ian Sendelbach
+                  Ian
                 </strong>
                 . A year ago I was headed off to a middling 4-year OOS engineering
-                program, excited to give my current college a change but wanting
+                program, excited to give my current college a chance but wanting
                 to keep the door of transferring open. Now, a year and some change later
                 I am at a better school and a better engineer because of that choice.
                 I want to give you the guidance I wish I had and see you succeed past whatever
@@ -72,8 +72,8 @@ export default function About() {
               </p>
               <p>
                 If you are like me, and know you are capable of more than your current school
-                has to offer you, please consider reaching out or filling out the assessment below -
-                I personally read each response and try my best to give an honest assessment at where you stand.
+                has to offer you, please consider reaching out or filling out the assessment -
+                I personally read each response and try my best to give an honest read on where you stand.
               </p>
               <p className="font-mono text-sm text-plum-600">— Ian</p>
             </div>

@@ -7,7 +7,7 @@ const STEPS = [
   },
   {
     title: "Pick your package",
-    body: "Ian replies by email with an honest read on your fit and which package (if any) makes sense. No pressure, no upsell.",
+    body: "I reply by email with an honest read on your fit and which package (if any) makes sense. No pressure, no upsell.",
   },
   {
     title: "We build your strategy",

@@ -27,7 +27,7 @@ const FAQS = [
   },
   {
     q: "How do payments work?",
-    a: "Simple flat rates — the price on the card is the whole price. After the questionnaire, Ian emails you to confirm fit and scope before anything is billed; you'll never be charged just for inquiring. Payment is handled by invoice before work begins. If it turns out you don't actually need a paid package, he'll tell you that too.",
+    a: "Simple flat rates — the price on the card is the whole price. After the questionnaire, I email you to confirm fit and scope before anything is billed; you'll never be charged just for inquiring. Payment is handled by invoice before work begins. If it turns out you don't actually need a paid package, I'll tell you that too.",
   },
 ];
 

@@ -96,7 +96,7 @@ const SLIDES: Slide[] = [
     validate: (a) =>
       EMAIL_RE.test(a.email.trim())
         ? null
-        : "Please enter a valid email — it's how Ian will reply to you.",
+        : "Please enter a valid email — it's how I'll reply to you.",
   },
   {
     id: "phone",
@@ -306,7 +306,7 @@ export default function Questionnaire() {
             You&apos;re in the queue.
           </h3>
           <p className="mt-4 text-base leading-relaxed text-ink-500">
-            Thanks, {answers.firstName.trim()} — Ian will email you back at{" "}
+            Thanks, {answers.firstName.trim()} — I&apos;ll email you back at{" "}
             <strong className="font-mono text-sm font-medium text-plum-600">
               {answers.email.trim()}
             </strong>{" "}
@@ -465,11 +465,11 @@ function SectionShell({ children }: { children: ReactNode }) {
             Start here
           </p>
           <h2 className="mt-4 text-center text-2xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
-            Tell Ian about your transfer.
+            Take this questionnaire to get started - I'll personally read it and give you an honest assessment.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-center text-base leading-relaxed text-ink-500">
-            About two minutes, one question at a time. Ian personally reads
-            every submission and replies by email.
+            About two minutes, one question at a time. I personally read
+            every submission and reply via email.
           </p>
         </Reveal>
         <div className="mt-12">{children}</div>
@@ -543,7 +543,7 @@ function SlideFields({
             placeholder="you@example.com"
           />
           <span className="mt-2 block font-mono text-xs text-ink-400">
-            This is where Ian will reply — double-check the spelling.
+            This is where I&apos;ll reply — double-check the spelling.
           </span>
         </label>
       );
@@ -676,7 +676,7 @@ function SlideFields({
       return (
         <label className="block">
           <span className="mb-1.5 block font-mono text-xs text-ink-700">
-            Biggest challenge, or anything else Ian should know
+            Biggest challenge, or anything else I should know
           </span>
           <textarea
             rows={5}

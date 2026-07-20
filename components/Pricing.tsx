@@ -28,7 +28,7 @@ export default function Pricing() {
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-500">
             Flat pricing, no subscriptions, no packages you don&apos;t need.
-            Every engagement starts with the same questionnaire so Ian can
+            Every engagement starts with the same questionnaire so I can
             tell you honestly whether it&apos;s a fit.
           </p>
         </Reveal>
@@ -97,7 +97,7 @@ export default function Pricing() {
         <Reveal delay={0.16}>
           <p className="mt-8 font-mono text-xs text-ink-400">
             Not sure which fits? Start the questionnaire and pick &ldquo;Not
-            sure yet&rdquo; — Ian will recommend one (or tell you that you
+            sure yet&rdquo; — I&apos;ll recommend one (or tell you that you
             don&apos;t need any of them).
           </p>
         </Reveal>

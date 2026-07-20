@@ -99,7 +99,7 @@ const STEPS: Step[] = [
       const errors: FieldErrors = {};
       if (!a.firstName.trim()) errors.firstName = "Please enter your first name.";
       if (!EMAIL_RE.test(a.email.trim()))
-        errors.email = "Please enter a valid email — it's how Ian will reply.";
+        errors.email = "Please enter a valid email — it's how I'll reply.";
       if (!a.schoolType) errors.schoolType = "Pick the closest match.";
       return errors;
     },

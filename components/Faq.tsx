@@ -19,11 +19,11 @@ const FAQS = [
   },
   {
     q: "How do sessions work — Zoom or async?",
-    a: "Both, depending on the work. Strategy conversations happen over Zoom so we can talk through trade-offs in real time. Essay reviews are async — you send a draft, and I return detailed written feedback and edits, usually within a few days. Full Application Package clients get a mix of scheduled calls and async reviews on whatever cadence the deadlines demand.",
+    a: "Both, depending on the work. Strategy conversations happen over Zoom so I can talk through trade-offs with you in real time. Essay reviews are async — you send a draft, and I return detailed written feedback and edits, usually within a few days. Full Application Package clients get a mix of scheduled calls and async reviews on whatever cadence the deadlines demand.",
   },
   {
     q: "How far in advance should I start?",
-    a: "Earlier than you think. If you're a freshman planning to transfer after your first year, the best time is your first semester — course selection and extracurricular choices you make now are the raw material of your application. For essay help specifically, 6–8 weeks before your deadline gives us room for real revision instead of a rushed pass. That said, if your deadline is close, reach out anyway; a focused week can still move an essay a lot.",
+    a: "Earlier than you think. If you're a freshman planning to transfer after your first year, the best time is your first semester — course selection and extracurricular choices you make now are the raw material of your application. For essay help specifically, 6–8 weeks before your deadline gives me room for real revision instead of a rushed pass. That said, if your deadline is close, reach out anyway; a focused week can still move an essay a lot.",
   },
   {
     q: "How do payments work?",

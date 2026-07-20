@@ -118,7 +118,7 @@ const SLIDES: Slide[] = [
     validate: (a) => {
       if (!a.currentSituation) return "Pick the closest match.";
       if (a.currentSituation === "Other" && !a.currentSituationOther.trim())
-        return "Tell us a little about your situation.";
+        return "Tell me a little about your situation.";
       return null;
     },
   },
@@ -588,7 +588,7 @@ function SlideFields({
           {answers.currentSituation === "Other" && (
             <label className="block">
               <span className="mb-1.5 block font-mono text-xs text-ink-700">
-                Tell us more
+                Tell me more
               </span>
               <input
                 type="text"

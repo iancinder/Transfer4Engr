@@ -2,7 +2,7 @@ import Reveal from "./Reveal";
 
 const STEPS = [
   {
-    title: "Tell us where you stand",
+    title: "Tell me where you stand",
     body: "Fill out the two-minute questionnaire — your school, your target programs, your GPA, your story so far.",
   },
   {
@@ -10,7 +10,7 @@ const STEPS = [
     body: "I reply by email with an honest read on your fit and which package (if any) makes sense. No pressure, no upsell.",
   },
   {
-    title: "We build your strategy",
+    title: "I build your strategy",
     body: "Coursework, extracurriculars, positioning, essays — a concrete plan built around what engineering admissions actually rewards.",
   },
   {

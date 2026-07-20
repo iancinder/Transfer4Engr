@@ -4,11 +4,12 @@ import { useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 /* Root-relative anchors so links work from any page, not just "/". */
+/* Services and FAQ are hidden for now — restore here when they return:
+   { href: "/#services", label: "Services" },
+   { href: "/#faq", label: "FAQ" },            */
 const LINKS = [
   { href: "/#how-it-works", label: "How it works" },
-  { href: "/#services", label: "Services" },
   { href: "/#about", label: "About" },
-  { href: "/#faq", label: "FAQ" },
 ];
 
 /**
@@ -44,10 +45,10 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="/#questionnaire"
+            href="/#assessment"
             className="rounded-sm bg-plum-600 px-4 py-2 font-mono text-[13px] font-medium text-cream-50 transition-colors hover:bg-plum-500"
           >
-            Start your application
+            Get my free assessment
           </a>
         </div>
 
@@ -102,11 +103,11 @@ export default function Nav() {
                 </a>
               ))}
               <a
-                href="/#questionnaire"
+                href="/#assessment"
                 onClick={() => setMenuOpen(false)}
                 className="mt-4 rounded-sm bg-plum-600 px-4 py-3 text-center font-mono text-sm font-medium text-cream-50"
               >
-                Start your application
+                Get my free assessment
               </a>
             </div>
           </motion.div>

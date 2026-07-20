@@ -44,9 +44,9 @@ export default function Hero() {
           {...rise(0.16)}
           className="mt-6 max-w-2xl text-base leading-relaxed text-ink-500 sm:text-lg"
         >
-          Transferring into a top engineering school isn&apos;t luck —
-          it&apos;s a strategy. Transfer4Engr gives you a plan, sharpened
-          essays, and a guide who made exactly this jump.
+          Getting into top schools doesn&apos;t happen by accident — I learned
+          that when I got rejected in high school. Now that I know the process,
+          I can help you achieve what you know you&apos;re capable of.
         </motion.p>
 
         {/* Credential chips, in the style of a spec sheet. */}
@@ -66,10 +66,10 @@ export default function Hero() {
           className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center"
         >
           <a
-            href="#questionnaire"
+            href="#assessment"
             className="rounded-sm bg-plum-600 px-6 py-3.5 text-center font-mono text-sm font-medium text-cream-50 transition-colors hover:bg-plum-500"
           >
-            Start your application
+            Get my free assessment
           </a>
           <a
             href="#how-it-works"
@@ -80,7 +80,8 @@ export default function Hero() {
         </motion.div>
 
         <motion.p {...rise(0.4)} className="mt-6 font-mono text-xs text-ink-400">
-          ~2 min questionnaire. No commitment — just a conversation.
+          ~2 min assessment. I&apos;ll tell you where I think you actually
+          stand, and determine if you&apos;re a good fit to take on as a client.
         </motion.p>
       </div>
     </section>

@@ -675,7 +675,7 @@ function StepFields({
           <div className="grid gap-5 sm:grid-cols-2">
             <Field
               name="essayRating"
-              label="How good would you rate your essay(s), 1–10?"
+              label="How would you rate your essay(s), 1–10?"
               type="number"
               min={1}
               max={10}

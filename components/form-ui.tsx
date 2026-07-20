@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * Shared form primitives used by both the homepage Questionnaire and the
- * /assessment form, so the two stay visually identical.
+ * Shared form primitives used by both the Questionnaire and the
+ * assessment form, so the two stay visually identical.
  */
 
 export const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

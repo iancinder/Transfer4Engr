@@ -465,7 +465,7 @@ function SectionShell({ children }: { children: ReactNode }) {
             Start here
           </p>
           <h2 className="mt-4 text-center text-2xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
-            Take this questionnaire to get started - I'll personally read it and give you an honest assessment.
+            Take this questionnaire to get started — I&apos;ll personally read it and give you an honest assessment.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-center text-base leading-relaxed text-ink-500">
             About two minutes, one question at a time. I personally read

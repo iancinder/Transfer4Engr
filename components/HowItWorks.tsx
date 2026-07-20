@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 const STEPS = [
   {
     title: "Tell me where you stand",
-    body: "Fill out the two-minute questionnaire — your school, your target programs, your GPA, your story so far.",
+    body: "Fill out the two-minute assessment — your school, your target programs, your GPA, your story so far.",
   },
   {
     title: "Pick your package",

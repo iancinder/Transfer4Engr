@@ -29,7 +29,7 @@ Open http://localhost:3000.
 
 3. Restart the dev server. Until a real key is set, the form falls back to
    the placeholder `YOUR_WEB3FORMS_ACCESS_KEY_HERE` (defined in
-   `components/Questionnaire.tsx`) and submissions will fail.
+   `components/form-ui.tsx`) and submissions will fail.
 
 The form includes a hidden `botcheck` honeypot field for basic spam
 protection, which Web3Forms filters automatically.

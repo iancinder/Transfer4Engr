@@ -2,16 +2,11 @@
 
 import {
   useCallback,
-  useEffect,
   useRef,
   useState,
   type ReactNode,
 } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import {
-  PACKAGE_FORM_OPTIONS,
-  PACKAGE_SELECT_EVENT,
-} from "@/lib/packages";
 import {
   EMAIL_RE,
   WEB3FORMS_KEY,
@@ -30,7 +25,6 @@ interface Answers {
   lastName: string;
   email: string;
   phone: string;
-  pkg: string;
   currentSituation: string;
   currentSituationOther: string;
   targetSchools: string;
@@ -45,7 +39,6 @@ const EMPTY_ANSWERS: Answers = {
   lastName: "",
   email: "",
   phone: "",
-  pkg: "",
   currentSituation: "",
   currentSituationOther: "",
   targetSchools: "",
@@ -104,12 +97,6 @@ const SLIDES: Slide[] = [
     title: "Phone or preferred contact method?",
     optional: true,
     validate: () => null,
-  },
-  {
-    id: "package",
-    eyebrow: "Services",
-    title: "Which package are you interested in?",
-    validate: (a) => (a.pkg ? null : "Pick one — “Not sure yet” is fine."),
   },
   {
     id: "situation",
@@ -192,16 +179,6 @@ export default function Questionnaire() {
     []
   );
 
-  /* Pre-select a package when a pricing card is clicked. */
-  useEffect(() => {
-    const onSelect = (e: Event) => {
-      const name = (e as CustomEvent<string>).detail;
-      setAnswers((prev) => ({ ...prev, pkg: name }));
-    };
-    window.addEventListener(PACKAGE_SELECT_EVENT, onSelect);
-    return () => window.removeEventListener(PACKAGE_SELECT_EVENT, onSelect);
-  }, []);
-
   const goTo = (next: number, dir: number) => {
     setDirection(dir);
     setStep(next);
@@ -246,7 +223,6 @@ export default function Questionnaire() {
       "Name": fullName,
       "Email": answers.email.trim(),
       "Phone / preferred contact": answers.phone.trim() || "(not provided)",
-      "Package interested in": answers.pkg,
       "Current situation": situation,
       "Target school(s)": answers.targetSchools.trim(),
       "Intended engineering major": answers.major.trim(),
@@ -543,7 +519,7 @@ function SlideFields({
             placeholder="you@example.com"
           />
           <span className="mt-2 block font-mono text-xs text-ink-400">
-            This is where I&apos;ll reply — double-check the spelling.
+            This is where I will reply — double check spelling.
           </span>
         </label>
       );
@@ -564,16 +540,6 @@ function SlideFields({
             placeholder="(555) 123-4567, or “email is fine”"
           />
         </label>
-      );
-
-    case "package":
-      return (
-        <RadioGroup
-          name="package"
-          options={PACKAGE_FORM_OPTIONS}
-          value={answers.pkg}
-          onChange={(v) => set("pkg", v)}
-        />
       );
 
     case "situation":
@@ -706,20 +672,19 @@ function SlideFields({
           value: answers.phone || "—",
           slideIndex: 2,
         },
-        { label: "Package", value: answers.pkg, slideIndex: 3 },
-        { label: "Current situation", value: situation, slideIndex: 4 },
-        { label: "Target school(s)", value: answers.targetSchools, slideIndex: 5 },
-        { label: "Intended major", value: answers.major, slideIndex: 6 },
-        { label: "GPA", value: answers.gpa, slideIndex: 7 },
+        { label: "Current situation", value: situation, slideIndex: 3 },
+        { label: "Target school(s)", value: answers.targetSchools, slideIndex: 4 },
+        { label: "Intended major", value: answers.major, slideIndex: 5 },
+        { label: "GPA", value: answers.gpa, slideIndex: 6 },
         {
           label: "Extracurriculars",
           value: answers.extracurriculars,
-          slideIndex: 8,
+          slideIndex: 7,
         },
         {
           label: "Biggest challenge",
           value: answers.challenge || "—",
-          slideIndex: 9,
+          slideIndex: 8,
         },
       ];
       return (

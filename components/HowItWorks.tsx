@@ -29,7 +29,7 @@ export default function HowItWorks() {
             How it works
           </p>
           <h2 className="mt-4 max-w-2xl text-2xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
-            From &ldquo;stuck here&rdquo; to acceptance letter, in four steps.
+            A year of effort for the rest of your life.
           </h2>
         </Reveal>
 

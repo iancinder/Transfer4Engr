@@ -44,9 +44,8 @@ export default function Hero() {
           {...rise(0.16)}
           className="mt-6 max-w-2xl text-base leading-relaxed text-ink-500 sm:text-lg"
         >
-          Getting into top schools doesn&apos;t happen by accident — I learned
-          that when I got rejected in high school. Now that I know the process,
-          I can help you achieve what you know you&apos;re capable of.
+          Going from a rejected profile to one that gets accepted to top 5 programs isn&apos;t anywhere
+          near easy - but I know from lived experience that it&apos;s possible.
         </motion.p>
 
         {/* Credential chips, in the style of a spec sheet. */}

@@ -2,20 +2,20 @@ import Reveal from "./Reveal";
 
 const STEPS = [
   {
-    title: "Tell me where you stand",
-    body: "Fill out the two-minute assessment — your school, your target programs, your GPA, your story so far.",
+    title: "Tell me about your current standing",
+    body: "Fill out the assessment below - I'll get back to you with an honest take on what's realistic.",
   },
   {
     title: "Pick your package",
-    body: "I reply by email with an honest read on your fit and which package (if any) makes sense. No pressure, no upsell.",
+    body: "I reply by email with an honest read on your fit and which package (if any) makes sense.",
   },
   {
-    title: "I build your strategy",
-    body: "Coursework, extracurriculars, positioning, essays — a concrete plan built around what engineering admissions actually rewards.",
+    title: "Work with me",
+    body: "Coursework, extracurriculars, essays, projects - I use my previous experience & connections to get your profile where it needs to be.",
   },
   {
     title: "You submit a stronger application",
-    body: "You hit submit knowing every piece — transcript narrative, activities, essays — is pulling in the same direction.",
+    body: "I guarantee that after working with me, your application will not only be technically stronger, it will have what admission committees want.",
   },
 ];
 

@@ -45,19 +45,16 @@ export default function About() {
           <Reveal delay={0.12}>
             <div className="space-y-5 text-base leading-relaxed text-ink-700">
               <p>
-                Hi — I&apos;m{" "}
-                <strong className="font-semibold text-ink-900">
-                  Ian
-                </strong>
-                . A year ago I was headed off to a middling 4-year OOS engineering
-                program, excited to give my current college a chance but wanting
+                Hi - I&apos;m Ian.
+                A year ago I was headed off to a middling 4-year OOS engineering
+                program, excited to give that school a chance but wanting
                 to keep the door of transferring open. Now, a year and some change later,
                 I am at a better school and am a better engineer because of that choice.
                 I want to give you the guidance I wish I had and see you succeed past whatever
                 people tell you is possible.
               </p>
               <p>
-                I didn&apos;t get into UT by accident — I probably went to at least 20 different
+                I didn&apos;t get into UT by accident - I probably went to at least 20 different
                 clubs&apos; meetings, trying to see where I had a chance to contribute in a way
                 that would look good on my application file. I went to so many goddamned research
                 connects (and didn&apos;t even land my role through one of them). All of this is to say
@@ -72,7 +69,7 @@ export default function About() {
               </p>
               <p>
                 If you are like me, and know you are capable of more than your current school
-                has to offer you, please consider reaching out or filling out the assessment —
+                has to offer you, please consider reaching out or filling out the assessment -
                 I personally read each response and try my best to give an honest read on where you stand.
               </p>
               <p className="font-mono text-sm text-plum-600">— Ian</p>

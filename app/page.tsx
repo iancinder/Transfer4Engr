@@ -36,9 +36,8 @@ export default function Home() {
                 Am I competitive?
               </h2>
               <p className="mt-4 text-base leading-relaxed text-ink-500">
-                Tell me where you stand and get an honest read on your chances
-                — free, reviewed personally, reply by email within 48 hours. No
-                automated scoring.
+                Tell me about your situation, and I&apos;ll give you an honest read on what&apos;s
+                realistic based on your current stats.
               </p>
             </Reveal>
             <div className="mt-10">

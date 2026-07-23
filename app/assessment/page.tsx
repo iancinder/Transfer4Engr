@@ -3,10 +3,22 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import AssessmentForm from "@/components/AssessmentForm";
 
+const DESCRIPTION =
+  "Find out how competitive you are for an engineering transfer. Free assessment reviewed personally by a recent successful ECE transfer to UT Austin — honest reply by email within 48 hours, no automated scoring.";
+
+/* Title omits the brand — the root layout's template appends it. */
 export const metadata: Metadata = {
-  title: "Free Engineering Transfer Assessment | Transfer4Engr",
-  description:
-    "Find out how competitive you are for an engineering transfer. Free assessment reviewed personally by a recent successful ECE transfer to UT Austin — honest reply by email within 48 hours, no automated scoring.",
+  title: "Free Engineering Transfer Assessment",
+  description: DESCRIPTION,
+  alternates: {
+    canonical: "/assessment",
+  },
+  openGraph: {
+    title: "Free Engineering Transfer Assessment",
+    description: DESCRIPTION,
+    url: "/assessment",
+    type: "website",
+  },
 };
 
 export default function AssessmentPage() {

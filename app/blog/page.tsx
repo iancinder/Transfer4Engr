@@ -5,8 +5,17 @@ import Reveal from "@/components/Reveal";
 import PostCard from "@/components/PostCard";
 import { getPublishedPosts } from "@/lib/posts";
 
+/* Shown on the page. */
+const SUBHEADING =
+  "What works and how to get it to work for you. Knowledge and opinions are from lived experience.";
+
+/*
+ * Shown in search results. Kept separate from the subheading so it can name
+ * the things people actually search for — the on-page copy reads as voice,
+ * this has to read as a match for the query.
+ */
 const DESCRIPTION =
-  "Straight answers on transferring into engineering programs — application timelines, essays, course planning, and what admissions committees actually look for.";
+  "Guides, advice, and retrospectives on transferring into engineering programs — timelines, essays, course planning, and what admissions committees look for.";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -35,10 +44,10 @@ export default async function BlogIndexPage() {
                 Blog
               </p>
               <h1 className="mt-4 text-3xl font-semibold tracking-tight text-ink-900 sm:text-5xl">
-                Notes from the other side of a transfer.
+                Guides, advice, and retrospectives.
               </h1>
               <p className="mt-4 text-base leading-relaxed text-ink-500">
-                {DESCRIPTION}
+                {SUBHEADING}
               </p>
             </Reveal>
           </header>

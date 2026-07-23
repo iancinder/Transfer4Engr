@@ -10,6 +10,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 const LINKS = [
   { href: "/#how-it-works", label: "How it works" },
   { href: "/#about", label: "About" },
+  { href: "/blog", label: "Blog" },
 ];
 
 /**

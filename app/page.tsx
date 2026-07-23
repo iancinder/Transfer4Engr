@@ -5,6 +5,7 @@ import About from "@/components/About";
 import AssessmentForm from "@/components/AssessmentForm";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import LatestPosts from "@/components/LatestPosts";
 
 /*
  * Hidden sections — restore by re-importing and dropping back into <main>:
@@ -13,7 +14,7 @@ import Reveal from "@/components/Reveal";
  *   import Questionnaire from "@/components/Questionnaire";
  */
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <Nav />
@@ -47,6 +48,8 @@ export default function Home() {
         </section>
 
         <About />
+
+        <LatestPosts />
 
         {/*
          * TESTIMONIALS PLACEHOLDER — intentionally renders nothing.

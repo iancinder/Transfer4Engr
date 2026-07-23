@@ -16,11 +16,19 @@ import { collection, config, fields } from "@keystatic/core";
  * Posts are single `.mdoc` files with YAML frontmatter, so a post plus its
  * images lands as one reviewable commit.
  */
+/*
+ * `NEXT_PUBLIC_KEYSTATIC_SETUP=true` in .env.local forces GitHub mode on
+ * localhost so Keystatic's /keystatic/setup wizard can run — the wizard is
+ * what creates the GitHub App in the first place, and it only appears in
+ * GitHub mode. Remove the flag once the App slug below is populated.
+ */
 const GITHUB_APP_SLUG = process.env.NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG;
+const SETUP_MODE = process.env.NEXT_PUBLIC_KEYSTATIC_SETUP === "true";
 
 export default config({
   storage:
-    GITHUB_APP_SLUG && process.env.NODE_ENV !== "development"
+    SETUP_MODE ||
+    (GITHUB_APP_SLUG && process.env.NODE_ENV !== "development")
       ? {
           kind: "github",
           repo: { owner: "iancinder", name: "Transfer4Engr" },

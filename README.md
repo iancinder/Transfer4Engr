@@ -60,16 +60,43 @@ setup below.
 
 ### One-time GitHub App setup
 
-1. Run `npx keystatic create-github-app` and follow the browser flow. Name the
-   app something like `transfer4engr-content` and install it on the
-   `iancinder/Transfer4Engr` repo only.
-2. The command writes four values into `.env.local`. Copy all four into
-   **Vercel → Settings → Environment Variables**:
+There is no Keystatic CLI — the setup runs through a wizard in the app itself,
+which creates the GitHub App with the correct permissions via GitHub's App
+Manifest flow.
+
+1. Add this line to `.env.local`:
+
+   ```bash
+   NEXT_PUBLIC_KEYSTATIC_SETUP=true
+   ```
+
+   This forces GitHub storage mode on localhost, which is what makes the
+   wizard appear. **Never set this in Vercel** — GitHub mode without
+   credentials fails the production build.
+
+2. Run `npm run dev` and open
+   [localhost:3000/keystatic/setup](http://localhost:3000/keystatic/setup).
+   Follow the prompts; GitHub will ask you to create and install the App.
+   Install it on `iancinder/Transfer4Engr` only.
+
+3. The wizard finishes by showing four values. Put them in `.env.local`, and
+   also add all four in **Vercel → Settings → Environment Variables**:
    - `NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG`
    - `KEYSTATIC_GITHUB_CLIENT_ID`
    - `KEYSTATIC_GITHUB_CLIENT_SECRET`
    - `KEYSTATIC_SECRET`
-3. Redeploy.
+
+4. Delete `NEXT_PUBLIC_KEYSTATIC_SETUP` from `.env.local` — it's only needed
+   to bootstrap.
+
+5. Redeploy from Vercel so the new env vars are baked in.
+
+If the wizard doesn't work, the App can be created by hand at
+[github.com/settings/apps/new](https://github.com/settings/apps/new) with
+callback URL `https://transfer4engr.com/api/keystatic/github/oauth/callback`,
+webhooks off, and repository permissions **Contents: read & write**,
+**Metadata: read**, **Pull requests: read & write**. `KEYSTATIC_SECRET` is
+then any random 32+ character string.
 
 Until `NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` is set, the deployed editor runs
 in local mode and cannot save — Vercel's filesystem is read-only. Everything

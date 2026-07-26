@@ -4,10 +4,16 @@
  */
 
 export interface ServicePackage {
-  /** Stable id used for pre-selection events and form values. */
+  /** Stable id used for pre-selection events, form values, and checkout. */
   id: string;
   name: string;
+  /** Human-facing display price, e.g. "$349". */
   price: string;
+  /**
+   * Amount charged, in cents (USD). This is the authoritative figure sent to
+   * Stripe — `price` above is only for display. Keep the two in sync.
+   */
+  priceCents: number;
   tagline: string;
   bullets: string[];
   mostPopular?: boolean;
@@ -15,43 +21,43 @@ export interface ServicePackage {
 
 export const PACKAGES: ServicePackage[] = [
   {
-    id: "essay-review",
-    name: "Essay Review & Revision",
-    price: "$199",
+    id: "essay-application-review",
+    name: "Essay & Application Review",
+    price: "$349",
+    priceCents: 34900,
     tagline:
-      "Deep review and line-by-line revision of your transfer application essay(s).",
+      "Four weeks of back-and-forth email to sharpen your essays and rewrite your application.",
     bullets: [
-      "Line-by-line edits with the reasoning behind every change",
-      "Structural feedback: what to cut, what to expand, what to lead with",
-      "Positioning advice so your story reads like an engineer's, not a template's",
-      "Two revision rounds so the final draft is genuinely yours",
+      "Four weeks of email correspondence — as many exchanges as you need",
+      "Line-by-line essay revisions with the reasoning behind every change",
+      "Application rewriting: activities, short answers, and supplements",
     ],
   },
   {
-    id: "freshman-strategy",
-    name: "Freshman-Year Transfer Strategy",
-    price: "$349",
+    id: "review-plus-strategy-call",
+    name: "Review + Strategy Session",
+    price: "$599",
+    priceCents: 59900,
     tagline:
-      "At a school you're unhappy with? A roadmap for the year that gets you out — and in.",
+      "Everything in the review tier, plus a 90-minute 1:1 to work through strategy live.",
     bullets: [
-      "Semester-by-semester course plan built around transfer credit and GPA",
-      "Extracurricular strategy: what admissions actually rewards, and how to get it",
-      "Personal positioning: the narrative your application will be built on",
-      "1:1 Zoom strategy call to pressure-test the whole plan together",
+      "Everything in Essay & Application Review",
+      "One 90-minute 1:1 meeting on application logistics and strategy",
+      "Bring specific essay or application questions — we solve them together",
     ],
     mostPopular: true,
   },
   {
-    id: "full-package",
-    name: "Full Application Package",
-    price: "$749",
+    id: "full-application-partnership",
+    name: "Full Application Partnership",
+    price: "$999",
+    priceCents: 99900,
     tagline:
-      "Everything, start to finish — strategy, essays, and review across your whole application.",
+      "End-to-end partnership across your entire application, from first idea to submit.",
     bullets: [
-      "Multiple 1:1 application-review sessions from first draft to submit",
-      "Unlimited essay reviews across every school on your list",
-      "School list and major-fit strategy tailored to your record",
-      "Final full-application audit before you hit submit",
+      "Up to four 90-minute 1:1 calls across your application timeline",
+      "Help with every part: professor outreach for research, finding clubs, and framing your reason to transfer",
+      "Unlimited email correspondence throughout",
     ],
   },
 ];

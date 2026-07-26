@@ -15,11 +15,11 @@ const FAQS = [
   },
   {
     q: "What do you actually deliver?",
-    a: "It depends on the package. Essay Review & Revision gets you line-by-line edits on your essay drafts with written reasoning, across two revision rounds. Freshman-Year Transfer Strategy gets you a written semester-by-semester roadmap — courses, extracurriculars, positioning — plus a 1:1 Zoom call to walk through it. The Full Application Package covers everything: multiple review sessions and essay revisions across your entire application until you submit. In every case you get concrete written deliverables, not vague pep talks.",
+    a: "It depends on the package. Essay & Application Review gets you four weeks of email correspondence — line-by-line edits on your drafts with written reasoning, plus rewrites of your activities and short answers. Review + Strategy Session adds a 90-minute 1:1 to work through application logistics and any specific questions live. Full Application Partnership covers everything: up to four 90-minute calls, unlimited email, and help with every part of the process, from emailing professors about research to finding clubs and framing your reason to transfer. In every case you get concrete written deliverables, not vague pep talks.",
   },
   {
     q: "How do sessions work — Zoom or async?",
-    a: "Both, depending on the work. Strategy conversations happen over Zoom so I can talk through trade-offs with you in real time. Essay reviews are async — you send a draft, and I return detailed written feedback and edits, usually within a few days. Full Application Package clients get a mix of scheduled calls and async reviews on whatever cadence the deadlines demand.",
+    a: "Both, depending on the work. Strategy conversations happen over Zoom so I can talk through trade-offs with you in real time. Essay reviews are async — you send a draft, and I return detailed written feedback and edits, usually within a few days. Full Application Partnership clients get a mix of scheduled calls and async reviews on whatever cadence the deadlines demand.",
   },
   {
     q: "How far in advance should I start?",
@@ -27,7 +27,7 @@ const FAQS = [
   },
   {
     q: "How do payments work?",
-    a: "Simple flat rates — the price on the card is the whole price. After the questionnaire, I email you to confirm fit and scope before anything is billed; you'll never be charged just for inquiring. Payment is handled by invoice before work begins. If it turns out you don't actually need a paid package, I'll tell you that too.",
+    a: "Simple flat rates — the price on the card is the whole price. Start with the free assessment; I'll email you to confirm fit and scope before anything is billed, and you'll never be charged just for inquiring. If a package makes sense, I send you a secure Stripe checkout link and work begins once payment clears. If it turns out you don't actually need a paid package, I'll tell you that too.",
   },
 ];
 
